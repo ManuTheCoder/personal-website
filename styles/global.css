@@ -1,0 +1,25 @@
+body,
+html {
+	scroll-behavior: smooth;
+	background: #000;
+	color: #fff;
+	margin: 0;
+}
+*:not(.font-inter, .font-inter *, .font-mono, .font-mono *) {
+	font-family: "Outfit", sans-serif !important;
+}
+.font-inter,
+.font-inter * {
+	font-family: "Inter", sans-serif !important;
+}
+.font-mono,
+.font-mono * {
+	font-family: "Space Mono", monospace !important;
+}
+
+.MuiTouchRipple-rippleVisible {
+	animation-duration: 0.35s !important;
+}
+.MuiTouchRipple-child {
+	filter: opacity(0.4) !important;
+}
