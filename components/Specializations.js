@@ -5,7 +5,7 @@ import { AccentColor } from "../pages/index";
 export function Specializations() {
 	return (
 		<Box sx={{ background: "#fff", color: AccentColor, p: 7 }}>
-			<Typography variant="h3">My specializations</Typography>
+			<Typography variant="h3">My tech stack</Typography>
 			<Typography variant="h5" sx={{ mt: 1 }}>
 				<span style={{ opacity: 0.7 }}>I'm fully experienced with </span>
 				<span style={{ opacity: 1 }}>MongoDB, ExpressJS, ReactJS, NodeJS </span>

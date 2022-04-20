@@ -6,6 +6,8 @@ import CssBaseline from "@mui/material/CssBaseline";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import Fab from "@mui/material/Fab";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import "../styles/global.css";
 import Head from "next/head";
 import Link from "next/link";
@@ -85,6 +87,18 @@ function Footer() {
 					</Typography>
 				</Link>
 			</Box>
+			<Box sx={{ textAlign: "center", pt: 3 }}>
+				<Fab
+					onClick={() => window.scrollTo(0, 0)}
+					sx={{
+						background: "#000!important",
+						color: "#fff",
+						boxShadow: 0
+					}}
+				>
+					<ExpandLessIcon />
+				</Fab>
+			</Box>
 		</Box>
 	);
 }
@@ -94,7 +108,7 @@ const navButtonStyles = {
 	borderRadius: 9,
 	left: 0,
 	overflow: "hidden",
-	px: 2
+	px: 1.5
 };
 const navStyles = {
 	py: 2,
@@ -198,7 +212,11 @@ export default function ElevateAppBar(props) {
 								sx={{
 									flexGrow: 1,
 									cursor: "pointer",
-									"&:hover": { opacity: 0.9, textDecoration: "underline" }
+									"&:hover": { opacity: 0.9, textDecoration: "underline" },
+									fontSize: {
+										sm: "18px",
+										xs: "15px"
+									}
 								}}
 							>
 								@ManuTheCoder
@@ -239,7 +257,8 @@ export default function ElevateAppBar(props) {
 									color="inherit"
 									sx={navButtonStyles}
 								>
-									About me
+									About{" "}
+									<Box sx={{ display: { sm: "inline", xs: "none" } }}>me</Box>
 								</Button>
 							</Link>
 							<Button
