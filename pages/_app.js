@@ -214,7 +214,7 @@ export default function ElevateAppBar(props) {
 									cursor: "pointer",
 									"&:hover": { opacity: 0.9, textDecoration: "underline" },
 									fontSize: {
-										sm: "18px",
+										sm: "20px",
 										xs: "15px"
 									}
 								}}
