@@ -257,8 +257,10 @@ export default function ElevateAppBar(props) {
 									color="inherit"
 									sx={navButtonStyles}
 								>
-									About{" "}
-									<Box sx={{ display: { sm: "inline", xs: "none" } }}>me</Box>
+									About
+									<Box sx={{ display: { sm: "inline", xs: "none" } }}>
+										&nbsp; me
+									</Box>
 								</Button>
 							</Link>
 							<Button
