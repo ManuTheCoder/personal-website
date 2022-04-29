@@ -154,11 +154,11 @@ export default function ElevateAppBar(props) {
 				<title>Manu G - Full stack developer & philanthropist</title>
 				<meta
 					name="title"
-					content="Manu G - Full stack developer & philanthropist "
+					content="Manu G - Full stack developer"
 				/>
 				<meta
 					name="description"
-					content="Hey! I'm a full-stack developer who codes in JavaScript, PHP, and Python. ="
+					content="Hey! I'm a full-stack developer who codes in JavaScript, PHP, and Python. I code apps, websites, and discord bots that (hopefully) help make the world a better place!"
 				/>
 
 				<meta property="og:type" content="website" />

@@ -25,9 +25,12 @@ export default function IndexPage() {
           width: "100vw",
           justifyContent: "center",
           color: "white",
-          background: "url(https://i.ibb.co/2gYpC2Z/image.png)",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat"
+          animation: "background 2s forwards",
+          animationDelay: "1s",
+          opacity: 0,
+          "& *": {
+            animation: "scale 2s forwards"
+          }
         }}
       >
         <Box sx={{ px: 3 }}>
